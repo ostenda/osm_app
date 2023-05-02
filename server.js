@@ -42,7 +42,7 @@ app.get('/map', async (req, res) => {
     const query = `
       SELECT osm_id, name, ST_AsGeoJSON(ST_Transform(way, 4326)) AS geometry
       FROM planet_osm_point
-      WHERE amenity IN ('restaurant', 'cafe', 'bar', 'park')
+      WHERE amenity IN ('restaurant', 'cafe', 'bar', 'park', 'pub')
       AND way && ST_Transform(${bbox}, 3857);
     `;
     
