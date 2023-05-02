@@ -10,10 +10,15 @@
   "keywords": [],
   "description": "",
   "dependencies": {
+    "@ar-js-org/ar.js": "^3.4.5",
+    "aframe": "^1.4.2",
+    "aframe-look-at-component": "^1.0.0",
+    "aframe-osm-3d": "^0.5.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "geojson": "^0.5.0",
     "pg": "^8.10.0",
+    "three": "^0.152.2",
     "wkt": "^0.1.1"
   }
 }
