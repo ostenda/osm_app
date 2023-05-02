@@ -9,7 +9,8 @@ window.onload = () => {
                   east = e.detail.position.longitude + 0.01,
                   south = e.detail.position.latitude - 0.01;
                   north = e.detail.position.latitude + 0.01;
-            const response = await fetch(`/map?bbox=${west},${south},${east},${north}`);
+           // const response = await fetch(`/map?bbox=${west},${south},${east},${north}`);
+            const response = await fetch(`https://hikar.org/webapp/map?bbox=${west},${south},${east},${north}&layers=poi&outProj=4326`);
             const pois = await response.json();
             pois.features.forEach ( feature => {
                 const entity = document.createElement("a-box");
